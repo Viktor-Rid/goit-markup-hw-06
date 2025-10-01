@@ -24,7 +24,7 @@
 
 
 <body>
-
+    <!-- header -->
     <header class="page-header">
         <div class="container header-container">
 
@@ -53,12 +53,19 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button">
+                <svg class="burger-icon" width="24" height="24">
+
+                    <use href="./images/icons.svg#icon-burger">
+
+
+                    </use>
         </div>
     </header>
 
     <main>
         <!-- hero-image-->
-        <section class="hero">
+        <section class="hero hidden">
             <div class="container hero-container backdrop.is-open">
                 <h1 class="main-text">Effective Solutions <br /> for Your Business</h1>
                 <button class="main-button hero-btn " type="button" data-modal-open>Order Service</button>
@@ -68,7 +75,7 @@
 
         <!-- Benefits Section-->
 
-        <section class="benefits">
+        <section class="benefits hidden">
             <div class="container benefit-container">
                 <h2 class="visually-hidden">Benefits</h2>
                 <ul class="benefits-list">
@@ -133,7 +140,7 @@
             </div>
         </section>
         <!-- Team Section -->
-        <section class="team">
+        <section class="team hidden">
             <div class="container">
                 <h2 class="section-team">Our Team</h2>
                 <ul class="team-list">
@@ -294,7 +301,7 @@
 
 
         <!-- Portfolio Section -->
-        <section class="portfolio">
+        <section class="portfolio hidden">
             <div class="container">
                 <h2 class="second-title">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -380,7 +387,7 @@
 
 
     <!-- Footer Section -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
         <div class="container footer-container">
             <div class="logo-footer-container">
                 <a class="footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
@@ -428,9 +435,9 @@
                 <form class="subscribe-footer-form">
                     <label for="user-subscribe-email" class="footer-subscribe-class">
 
-                    <input class="footer-subscribe-input" type="email" name="user-subscribe-email"
-                        id="user-subscribe-email" placeholder="E-mail" />
-</label>
+                        <input class="footer-subscribe-input" type="email" name="user-subscribe-email"
+                            id="user-subscribe-email" placeholder="E-mail" />
+                    </label>
 
 
                     <button class="subscribe-button" type="submit">Subscribe
@@ -459,7 +466,7 @@
 
     <!----------- Modal ------------>
 
-    <div class=" backdrop" data-modal>
+    <div class=" backdrop hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="modal-close-button-icon" width="8" height="8">

@@ -49,6 +49,9 @@ p {
     margin: 0;
 }
 
+
+
+
 img {
     display: block;
     max-width: 100%;
@@ -561,7 +564,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    padding-top: 96px;
+    padding: 96px 0;
 }
 
 .feature {
@@ -576,7 +579,7 @@ button {
 }
 
 .feature-text {
-
+    display: block;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -632,3 +635,120 @@ button {
     }
 
 }
+
+/* ---TEAM SECTION-- */
+.team {
+
+    margin: 0 auto;
+    background: #f4f4fd;
+
+}
+
+.section-team {
+    display: none;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+
+.team-info {
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px;
+    width: 264px;
+    height: 428px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+
+}
+
+.team-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.team-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
+.social-list {
+    width: 232px;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-container {
+        padding: 0 108px;
+    }
+
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    .team-info {
+        width: calc((100% - 24px) / 2);
+    }
+
+    @media screen and (min-width: 1158px) {
+        .team-container {
+            padding: 0 15px;
+        }
+
+        .team-info {
+            width: calc((100% - 72px) / 4);
+        }
+    }
+
+}
+
+/* ---PORTFOLIO--- */
+
+
+.second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.portfolio-card {
+    width: 288px;
+    height: 280px;
+    background: #fff;
+    box-shadow: none;
+}
+
+.portfolio-img-wrapper {}
